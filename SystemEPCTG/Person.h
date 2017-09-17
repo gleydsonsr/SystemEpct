@@ -10,14 +10,18 @@ private:
 	string name;
 	string dateOfBirth;
 	Address address;
+	string photo;
 public:
-	Person(string name, string dateOfBirth, Address address);
+	Person(string name, string dateOfBirth, Address address, string photo);
 	int getId();
 	void setId(int id);
-	int getName();
+	string getName();
 	void setName(string name);
-	int getDateOfBirth();
+	string getDateOfBirth();
 	void setDateOfBirth(string dateOfBirth);
-
+	Address getAddress();
+	void setAddress(Address address);
+	string getPhoto();
+	void setPhoto(string photo);
 };
 
