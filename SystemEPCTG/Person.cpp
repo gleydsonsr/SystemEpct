@@ -1,10 +1,11 @@
 #include "stdafx.h"
 #include "Person.h"
 
-Person::Person(string name, string dateOfBirth, Address address, string photo) {
+Person::Person(string name, string dateOfBirth, Address address, string photo, ContactInformation contactInformation) {	
 	this->name = name;
 	this->dateOfBirth = dateOfBirth;
 	this->address = address;
+	this->contactInformation = contactInformation;
 	this->photo = photo;
 }
 
@@ -38,6 +39,14 @@ Address Person::getAddress() {
 
 void Person::setAddress(Address address) {
 	this->address = address;
+}
+
+ContactInformation Person::getContactInformation() {
+	return this->contactInformation;
+}
+
+void Person::setContactInformation(ContactInformation contactInformation) {
+	this->contactInformation = contactInformation;
 }
 
 string Person::getPhoto() {
